@@ -7,5 +7,5 @@
 	"db": "{{cookiecutter.slug}}",
 	"db_data_dir": "${HOME}/dev/{{cookiecutter.slug}}",
 	"db_user": "{{cookiecutter.slug}}",
-	"db_pass": "{{cookiecutter.db_pass}}"
+	"db_pass": "{{cookiecutter.slug}}"
 }	
