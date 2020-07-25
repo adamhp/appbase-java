@@ -3,6 +3,7 @@
 	"app_description": "Base Application",
     	"slug": "appbase",
 	"package": "ahpearce.appbase",
+	"package_dir": "{{cookiecutter.package.replace('.','/')}}",
 	"main_app_class": "Appbase",
 	"db": "{{cookiecutter.slug}}",
 	"db_data_dir": "${HOME}/dev/{{cookiecutter.slug}}",
