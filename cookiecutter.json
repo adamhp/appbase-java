@@ -1,0 +1,11 @@
+{
+	"app_name": "Appbase",
+	"app_description": "Base Application",
+    	"slug": "appbase",
+	"package": "ahpearce.appbase",
+	"main_app_class": "Appbase",
+	"db": "{{cookiecutter.slug}}",
+	"db_data_dir": "${HOME}/dev/{{cookiecutter.slug}}",
+	"db_user": "{{cookiecutter.slug}}",
+	"db_pass": "{{cookiecutter.db_pass}}"
+}	

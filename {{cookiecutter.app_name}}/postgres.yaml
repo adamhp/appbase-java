@@ -1,0 +1,21 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: {{cookiecutter.db}}
+      POSTGRES_USER: {{cookiecutter.db_user}}
+      POSTGRES_PASSWORD: {{cookiecutter.db_pass}}
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@mail.com
+      PGADMIN_DEFAULT_PASSWORD: {{cookiecutter.db_pass}}
